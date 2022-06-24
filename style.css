@@ -14,7 +14,8 @@ body{
 }
 
 @media screen and (max-width: 420px){
-   body{ background-image: url("bg-intro-mobile.png");
+  body{
+    background-image: url("bg-intro-mobile,png");
     background-size: cover;
     background-color: hsl(0, 100%, 74%);
 }
@@ -75,8 +76,7 @@ h5{
     height: 400px; 
     margin: auto; 
     padding: 30px;
-    padding-left: 45px;
-    
+    padding-left: 45px;    
 }
 
 #formhead{
@@ -89,7 +89,7 @@ h5{
     border-radius: 10px; 
     border-style: none;   
     box-shadow: 0px 3px rgb(210, 113, 113) ;
-    width: 550px; 
+    width: 565px; 
     height: 45px;
     margin-bottom: 18px;        
 }
