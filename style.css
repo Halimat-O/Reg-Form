@@ -14,6 +14,11 @@ body{
 }
 
 @media screen and (max-width: 420px){
+   body{ background-image: url("bg-intro-mobile.png");
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+}
+    
     .container1{
         display: block;
     }
