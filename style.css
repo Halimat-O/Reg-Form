@@ -1,138 +1,178 @@
-body{
+body {
+    margin: 0px;
+    padding: 0px;
     background-image: url("bg-intro-desktop.png");
-    background-size:cover;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: hsl(0, 100%, 74%);
-    color: rgb(250, 236, 236);  
-    font-family: 'Poppins', sans-serif; 
+    color: hsl(0, 58%, 95%);
+    font-family: 'Poppins';
 }
 
 @font-face {
-    font-family: 'Poppins', 'sans-serif';
+    font-family: 'Poppins';
     @import src url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
     font-weight: 400, 500, 600, 700;
-    font-size: 16px;    
+    font-size: 16px;
 }
 
-@media screen and (max-width: 420px){
-  body{
-    background-image: url("bg-intro-mobile,png");
-    background-size: cover;
-    background-color: hsl(0, 100%, 74%);
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url("bg-intro-mobile.png");
+        background-color: hsl(0, 100%, 74%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 10px;
+        padding: 10px;
+    }
+    .container{
+        flex-direction: column;
+        
+        }
+        .container1{      
+            margin: 0px;      
+            padding: 0px !important;
+           
+            justify-content: center !important;
+            align-items: center !important;             
+            width: 100% !important;           
+        }
+        h1{            
+            text-align: center !important;
+            font-size: 190% !important;
+            line-height: 40px !important;
+            padding: 60px 25px 3px 30px !important;
+        }
+        h5{            
+            text-align: center !important;
+            font-size: 100% !important;
+            padding: 0px 10px 30px 10px  !important;
+        }
+        .container2{
+            margin: 0px;      
+            padding: 0px !important;            
+            justify-content: center !important;
+            align-items: center !important;             
+            width: 80% !important;   
+        }
+        #formhead{
+            width: 290px !important;
+            height: 90px !important;
+            text-align: center;
+            padding: 10px 50px 10px 50px;
+            line-height: 25px;
+        }
+        .form, input{
+            width: 85% !important;
+        }
+        input[type=submit]{
+            width: 100% !important;
+        }
 }
-    
-    .container1{
-        display: block;
-    }
-    .container2{
-        display: block;
-    }
-} 
 
-p{
+p {
     font-weight: 400px;
     font-size: x-small;
 }
 
-h1{
+h1 {
     font-weight: 700px;
-    font-size: 40px;
+    font-size: 260%;
+    line-height: 55px;
 }
 
-h5{
-    font-weight: 400px;
-    line-height: 30px;
+h5 {
+    font-weight: normal;
+    font-size: 85%;
+    line-height: 25px;
 }
 
-.divcontain{
+.container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;   
-    width: 1150px;   
-    margin:auto;       
-    padding-top: 100px;      
-}
-
-.container1{
-    width: 50%;
-    margin:auto;    
-    padding-top: 60px;       
-}
-
-.container2{
-    width: 50%;
-    margin:auto;    
-    padding: 35px;
-}
-
-.form{    
-    font-family: 'Poppins', sans-serif; 
-    background-color: white;
-    color: rgb(250, 236, 236);                  
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     box-sizing: border-box;
-    box-shadow: 0px 5px rgb(210, 113, 113);    
-    justify-content: center;                      
-    border-radius: 10px;
-    line-height: 20px;     
-    height: 400px; 
-    margin: auto; 
-    padding: 30px;
-    padding-left: 45px;    
 }
 
-#formhead{
-    background-color: hsl(249, 56%, 41%);
+.container1 {
+    width: 450px;
+    padding: 170px 50px 0px 0px;
+}
+
+.container2 {
+    width: 450px;
+    padding: 130px 50px 0px 0px;
+}
+
+.form {
+    font-family: 'Poppins';
+    background-color: white;
+    box-shadow: 0px 7px rgb(210, 113, 113);
+    border-radius: 10px;
+    line-height: 20px;
+    width: 420px;
+    padding: 30px;
+}
+
+#formhead {
+    background-color: hsl(249, 32%, 49%);
     color: hsl(240, 31%, 95%);
     text-align: center;
     align-content: center;
-    font-family: 'Poppins', sans-serif; 
-    place-content: center;    
-    border-radius: 10px; 
-    border-style: none;   
-    box-shadow: 0px 3px rgb(210, 113, 113) ;
-    width: 565px; 
+    font-family: 'Poppins';
+    place-content: center;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0px 7px rgb(210, 113, 113);
+    width: 480px;
     height: 45px;
-    margin-bottom: 18px;        
+    margin-bottom: 20px;
 }
 
-input:valid{       
-    font-family: 'Poppins', sans-serif; 
-    width: 450px;
-    height: 40px;    
-    border-radius: 5px;  
+input {
+    font-family: 'Poppins';
+    border: 1px solid hsl(240, 5%, 87%);
+    width: 390px;
+    height: 40px;
+    border-radius: 5px;
     padding-left: 30px;
 }
 
-input.span::after{
-    display: block;
-    color:hsl(0, 100%, 74%);
-    place-content: right;
-    text-align: right;
-    font-size: 12px;
-    outline: none;    
-    border: 1px solid hsl(0, 100%, 74%);
-    background-image: url("icon-error.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-origin:content-box
+input:focus {
+    outline: 1px solid hsl(249, 32%, 49%);
 }
 
-input[type=submit] {    
-    font-family: 'Poppins', sans-serif; 
-    width: 490px;
-    height: 45px;
+input::placeholder {
+    font-weight: bold;
+    font-size: 12px;
+    color: gray;
+}
+
+input[type=submit] {
+    font-family: 'Poppins';
+    width: 420px;
+    height: 40px;
     background-color: hsl(154, 59%, 51%);
-    color:  hsl(240, 31%, 95%);
+    color: hsl(240, 31%, 95%);
     border-radius: 5px;
     border-style: none;
+    box-shadow: 0px 3px hsl(154, 51%, 47%);
     text-align: center;
     align-content: center;
     cursor: pointer;
 }
 
- 
-/**colorgroup
-- Red: hsl(0, 100%, 74%) 
-- Green: hsl(154, 59%, 51%)
-- Blue: hsl(248, 32%, 49%)
-- Dark Blue: hsl(249, 10%, 26%) 
-- Grayish Blue: hsl(246, 25%, 77%)
+/* input error */
+input.invalid {
+    color: hsl(0, 100%, 74%);
+    place-content: right;
+    text-align: right;
+    font-size: 12px;
+    outline: none;
+    border: 1px solid hsl(0, 100%, 74%);
+    background-image: url("icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box
+}
